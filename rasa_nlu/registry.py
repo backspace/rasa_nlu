@@ -48,34 +48,6 @@ registered_components = {
 # To simplify usage, there are a couple of model templates, that already add necessary components in the right order.
 # They also implement the preexisting `backends`.
 registered_pipeline_templates = {
-    "spacy_sklearn": [
-        "nlp_spacy",
-        "ner_crf",
-        "ner_synonyms",
-        "intent_featurizer_spacy",
-        "intent_classifier_sklearn",
-    ],
-    "mitie": [
-        "nlp_mitie",
-        "tokenizer_mitie",
-        "ner_mitie",
-        "ner_synonyms",
-        "intent_classifier_mitie",
-    ],
-    "mitie_sklearn": [
-        "nlp_mitie",
-        "tokenizer_mitie",
-        "ner_mitie",
-        "ner_synonyms",
-        "intent_featurizer_mitie",
-        "intent_classifier_sklearn",
-    ],
-    "keyword": [
-        "intent_classifier_keyword",
-    ],
-    # this template really is just for testing
-    # every component should be in here so train-persist-load-use cycle can be tested
-    # they still need to be in a useful order - hence we can not simply generate this automatically
     "all_components": [
         "nlp_spacy",
         "nlp_mitie",
