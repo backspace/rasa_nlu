@@ -49,22 +49,7 @@ registered_components = {
 # They also implement the preexisting `backends`.
 registered_pipeline_templates = {
     "all_components": [
-        "nlp_spacy",
-        "nlp_mitie",
-        "tokenizer_whitespace",
-        "tokenizer_mitie",
-        "tokenizer_spacy",
-        "ner_mitie",
-        "ner_crf",
-        "ner_spacy",
         "ner_duckling",
-        "ner_synonyms",
-        "intent_featurizer_mitie",
-        "intent_featurizer_spacy",
-        "intent_featurizer_ngrams",
-        "intent_classifier_keyword",
-        "intent_classifier_sklearn",
-        "intent_classifier_mitie",
     ]
 }
 
